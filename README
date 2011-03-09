@@ -1,0 +1,26 @@
+I always seem to need a good ini parser for various projects and
+usually hack one together each time. To remedy this I built this
+simple one that will process a standard INI file of the following
+form:
+
+----------------------- BEGIN SNIP -----------------------------------
+
+[section1]
+
+key1 = hello
+key2= 2.56
+key3:12
+
+;; this is a comment
+test1 : somethine else here
+
+; this is also a comment
+# and yet another comment
+[section 2]
+
+key1 = something in section 2
+test1: true
+
+----------------------- END SNIP -------------------------------------
+
+The reader is very simple to use, see main.c for how.
